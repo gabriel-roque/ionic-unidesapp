@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro de Aluno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">E-Mail</ion-label>
+      <ion-input type="mail"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">Nome da mãe</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">Numero de Matrícula</ion-label>
+      <ion-input type="mail"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label>Selecione seu curso</ion-label>
+      <ion-select value="brown" okText="Ok!" cancelText="Cancelar">
+        <ion-select-option value="brown">Sistemas</ion-select-option>
+        <ion-select-option value="blonde">Farmácia</ion-select-option>
+        <ion-select-option value="black">Direito</ion-select-option>
+        <ion-select-option value="red">Enfermagem</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">Data de nascimento</ion-label>
+      <ion-datetime displayFormat="MM DD YY"></ion-datetime>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">RG</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">CEP</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-button type="submit" expand="block">
+      Enviar
+    </ion-button>
+  </form>
+</ion-content>

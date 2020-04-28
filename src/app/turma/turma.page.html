@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro de Turma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label position="floating">E-Mail da turma</ion-label>
+      <ion-input type="mail"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">Nome do líder de turma</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">E-Mail do líder de turma</ion-label>
+      <ion-input type="mail"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label position="floating">Telefone do líder de turma</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <hr />
+    <ion-item>
+      <ion-label>Selecione seu semestre</ion-label>
+      <ion-select value="1" okText="Ok!" cancelText="Cancelar">
+        <ion-select-option value="1">1 SEM</ion-select-option>
+        <ion-select-option value="2">2 SEM</ion-select-option>
+        <ion-select-option value="3">3 SEM</ion-select-option>
+        <ion-select-option value="4">4 SEM</ion-select-option>
+        <ion-select-option value="5">5 SEM</ion-select-option>
+        <ion-select-option value="6">6 SEM</ion-select-option>
+        <ion-select-option value="7">7 SEM</ion-select-option>
+        <ion-select-option value="8">8 SEM</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <hr />
+    <ion-button type="submit" expand="block">
+      Enviar
+    </ion-button>
+  </form>
+</ion-content>

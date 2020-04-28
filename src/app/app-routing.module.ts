@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'aluno',
+    loadChildren: () => import('./aluno/aluno.module').then( m => m.AlunoPageModule)
+  },
+  {
+    path: 'professor',
+    loadChildren: () => import('./professor/professor.module').then( m => m.ProfessorPageModule)
+  },
+  {
+    path: 'turma',
+    loadChildren: () => import('./turma/turma.module').then( m => m.TurmaPageModule)
+  },
 ];
 
 @NgModule({
