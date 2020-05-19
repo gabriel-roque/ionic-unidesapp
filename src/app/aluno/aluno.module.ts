@@ -9,12 +9,7 @@ import { AlunoPageRoutingModule } from './aluno-routing.module';
 import { AlunoPage } from './aluno.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    AlunoPageRoutingModule
-  ],
-  declarations: [AlunoPage]
+  imports: [CommonModule, FormsModule, IonicModule, AlunoPageRoutingModule],
+  declarations: [AlunoPage],
 })
 export class AlunoPageModule {}
